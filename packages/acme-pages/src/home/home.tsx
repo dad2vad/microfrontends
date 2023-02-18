@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Layout, Page, Text, Code, Link, Snippet } from '@vercel/examples-ui'
-import { Button, Quote } from '@acme/design-system'
+
 import { matchingTextColor, randomColor } from '@acme/utils'
 import Navbar from '../components/navbar'
 
@@ -39,14 +39,8 @@ export default function Home() {
         Example of how you could build a Design System, it&apos;s a set of React
         Components that ship with CSS Modules.
       </Text>
-      {bgColor && textColor && (
-        <>
-          <Button className="mb-4">This is a button</Button>
-        </>
-      )}
-      <Quote className="mb-4">
-        This is the <Code>Quote</Code> component in the design system.
-      </Quote>
+  
+   
       <Text variant="h2" className="mt-10 mb-6">
         packages/acme-pages
       </Text>
@@ -70,17 +64,7 @@ export default function Home() {
       </Text>
       {bgColor && textColor && (
         <>
-          <Button
-            className="mb-4"
-            style={{
-              backgroundColor: bgColor,
-              color: textColor,
-              borderColor: textColor,
-            }}
-            onClick={changeColor}
-          >
-            Change Color
-          </Button>
+         
         </>
       )}
       <Text variant="h2" className="mt-10 mb-6">
